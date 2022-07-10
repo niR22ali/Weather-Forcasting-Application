@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script src="{% static 'js/demo.js' %}"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Web</title>
+</head>
+<body class="bg" style="background-image: url('{% static 'images/rainbow.png' %}')";>
+    <h1>Get WEATHER information</h1>
+    <a href="{% url 'weathersystemfile' %}"><input type="button" class="button" value="Proceed"></a>
+</body>
+</html>
+
+<!--transition:all 1s ease;-->
+<!--margin-top: 15px;-->

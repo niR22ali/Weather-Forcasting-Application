@@ -1,0 +1,46 @@
+.bg{
+
+}
+
+h1{
+    color:white;
+    text-align: center;
+    text-shadow: 0 0 10px #ffff;
+                 0 0 20px #ffff;
+                 0 0 40px #ffff;
+                 0 0 80px #ffff;
+                 0 0 120px #ffff;
+                 0 0 160px #ffff;
+    font-size: 4rem;
+
+}
+
+.button{
+  background-color: #FF7FBB;
+  border-radius: 0.5rem;
+  border-color: #FF7FBB;
+  color: white;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 42rem;
+  margin-top: 25rem;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button:hover{
+    background-color: #FF5896;
+    color: white;
+    text-shadow: 0 0 10px #ffff;
+                 0 0 20px #ffff;
+                 0 0 40px #ffff;
+                 0 0 80px #ffff;
+                 0 0 120px #ffff;
+                 0 0 160px #ffff;
+}
+
+
+

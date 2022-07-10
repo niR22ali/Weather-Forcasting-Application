@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/weatherstyle.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Web</title>
+</head>
+<body style="background-image: url('{% static 'images/img1.jpg' %}')";>
+    <div class="header">
+        <h1>What's the weather?</h1>
+    </div>
+    <div class="wholeblock">
+        <div class="searchblock">
+            <form method="POST">
+            {% csrf_token %}
+                <input type="text" class="search-box" placeholder="Serch here" name="place" autocomplete="off"/>
+                <button type="submit" class="button">Search</button>
+            </form>
+        </div>
+        <div class="wheatherblock">
+            <div class="place">{{info.place}}</div>
+            <div class="temp">{{info.celcius_temperature}} °C</div> <!--/ {{info.kelvin_temperature}} °F-->
+            <div class="description">{{info.description}}</div>
+
+            <div class="humpres">Humidity : {{info.humidity}} - Pressure : {{info.pressure}}</div>
+
+            <img src='http://openweathermap.org/img/w/{{info.icon}}.png' width="100px">
+    </div>
+
+<!--    <h1>{{description}}</h1>-->
+<!--    <h1>{{temp}}</h1>-->
+<!--    <h1>{{dayMonYr}}</h1>-->
+<!--    <h1>{{place}}</h1>-->
+<!--    <h1>{{country}}</h1>-->
+
+</body>
+</html>
