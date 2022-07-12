@@ -1,7 +1,7 @@
 # Weather-Monitoring-System
 
 You can get every place weather details here!!
-User jst have to input the place and all the weather details like atmospheric pressure and humidity, weather conditions, temperature will be displayed.
+User just have to input the place and all the weather details like atmospheric pressure and humidity, weather conditions, temperature will be displayed.
 
 Technologies used: Python, Django, HTML, CSS.
 
